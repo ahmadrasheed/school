@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Changa:400,600&display=swap');
+
+html,body{
+    height: 100%;
+    padding:0px !important;
+    margin:0px !important;
+    
+    
+}
+
+
+#section-one{
+    margin-top:200px;
+
+}
+#main-title{
+  
+}
+#titles{
+    padding-right:0px;
+    
+}
+
+.title1 , .title2{
+    color:white; 
+    text-shadow: 2px 2px 1px #000000;
+    background:rgba(0,0,0,0.5);
+    
+}
+.title1{
+    font-size:40px;
+    display: block;
+    float:none;
+    
+    
+}
+.title2{
+    font-size:20px;
+    display: block;
+    width: 70%;
+    
+    
+    
+}
+
+
+.bg-purple{
+    color:white;
+    background-color:rgba(146, 13, 223, 1);
+}
+#particles-js{
+   
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+
+}
+
+.myfont{
+
+    font-family: 'Changa', sans-serif !important;
+
+}
+
+nav.navbar{
+    background-color:rgba(146, 13, 223, 1) !important;
+    
+}
+.pic { 
+    
+    
+    width: 100vw;
+    /* The image used */
+    background-image: url("../img/multaka-bg1.jpg");
+  
+    /* Full height */
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-clip:content-box;
+    background-attachment:fixed;
+    height:100vh;
+    padding:0px;
+    
+  }
+  #article-show {
+      overflow: hidden;
+  }
+#article-show img{
+    max-width: 80%;
+    text-align: center;
+    border:2px red dotted;
+}
+
+a.navbar-brand{
+    font-size:40px;
+    color: white !important;
+    
+
+}
+
+
+.dropdown-menu{
+   
+    background-color:rgb(181, 64, 248) !important;
+}
+
+
+span.navbar-toggler-icon{
+    color:forestgreen !important;
+    
+}
+
+.nav-link {
+
+    color:white !important;
+    margin-right:30px;
+    font-size: 1.2em;
+    justify-self: flex-end!;
+
+    text-shadow: 2px 2px 10px #000000;
+    
+    
+}
+.dropdown-item{
+
+    text-align: right !important;
+    color:white !important;
+}
+.dropdown-item:hover{
+
+    text-align: right !important;
+    color:black !important;
+}
+
+
+#carouselExampleIndicators{
+    height:300px;
+    margin-top:150px;
+}
+
+#myrow{
+    margin-top:200px;
+    height:400px;
+    background-color:rgba(74, 5, 95, 0.493);
+    text-align: center;
+    
+}
+#mycontainer h1{
+    font-size:4vw;
+    color:White;
+    
+}
+
+
+#title{
+    font-size:22px;
+}
+
+
+/* section two */
+
+#section-2 {
+    
+    padding:0px;
+    margin:0px !important;
+   
+}
+#section-2 .container-fluid {
+    padding-bottom:100px;
+    background-color:rgba(146, 13, 223, 1);
+   
+    
+}
+.card-title{
+    font-size:33px;
+}
+.card-body{
+    direction:rtl;
+}
+.card-text{
+    color:rgb(107, 107, 107) !important;
+}
+/*  */
+
+
+
+/* section-3 */
+
+.section-3 {
+    position:relative;
+    height:auto;
+    margin:0px;
+    
+}
+
+#about{
+    margin-top:3%;
+    color:rgb(211, 205, 205);
+    text-align: center;
+    direction:rtl;
+}
+#about p{
+    font-size:22px;
+}
+
+.rounded-circle{
+ width:200px;
+ height:180px;
+ border:3px solid rgb(181, 64, 248) !important;
+}
+.rounded-circle:hover{
+    border:6px solid rgb(255, 255, 255) !important;
+    opacity:0.8;
+}
+
+/* footer  */
+
+footer{
+    
+    bottom: 0;
+    width: 100vw;
+    padding-top:50px;
+    height:200px;
+    background-color:rgba(146, 13, 223, 1);
+
+}
+footer i{
+    color:white;
+    font-size:40px;
+    margin-left:20px;
+    margin-top:50px;
+}
+footer i:hover{
+    color:rgb(211, 151, 245);
+    font-size:50px;
+  
+}
+
+footer p{
+    color:whitesmoke;
+    font-size:16px;
+}
+
+
+/* media for Multaka  */
+@media only screen and (max-width: 600px) {
+    .title1{
+        display:none;
+        font-size:20px;
+    }
+    .title2{
+        
+        font-size:20px;
+        margin-left:0;
+        padding-left: 0;  
+    }
+
+    #article-show {
+        overflow-wrap: normal;
+    }
+    .card-text  p{
+        
+        padding:5px;
+        width: 95% !important;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+
+    }
+    #article{
+        width: 90vw !important;
+    }
+  #article-show img{
+      max-width: 90%;
+      text-align: center;
+      
+  }
+    
+
+    #section-one{
+        background-color:rgba(0,0,0,0.5);
+        padding:0;
+        margin:0;
+        margin-top:50px;
+        padding-bottom: 0px;
+
+    }
+
+    .pic{
+        height: 75vh;
+    }
+
+    #last-news{
+        font-size: 20px;
+        margin-right: 0px;
+        padding-right: 10px;
+    }
+
+
+
+
+
+
+    footer p{
+        color:whitesmoke;
+        font-size:14px;
+    }
+  }
+
+
+
+
+/* End media for Multaka  */
