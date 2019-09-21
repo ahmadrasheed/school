@@ -18,7 +18,9 @@ html,body{
     margin-top:200px;
 
 }
-
+.brand-title{
+    font-size: 16px;
+}
 #titles{
     padding-right:0px;
     
@@ -180,8 +182,13 @@ span.navbar-toggler-icon{
     
     padding:0px;
     margin:0px !important;
-   
 }
+#section-two a{
+    text-decoration: none;
+    color:#f87616
+}    
+   
+
 #section-2 .container-fluid {
     padding-bottom:100px;
     background-color:#084374 ;

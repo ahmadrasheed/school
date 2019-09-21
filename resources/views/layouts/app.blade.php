@@ -36,7 +36,8 @@
    
     <div id="app" class="myfont" style="direction:rtl;">
         <nav style="direction:rtl !important;" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{{route('home')}}"><img src="{{ asset('img/school-logo.png') }}" width="100px"> </a>
+            <a class="navbar-brand" href="{{route('home')}}"><img src="{{ asset('img/school-logo.png') }}" width="100px"> <span class="brand-title">
+               متوسطة فتح الفتوح</span> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon">   
                 <i class="fas fa-bars" style="color:#f87616; font-size:28px;"></i>
