@@ -19,9 +19,56 @@
 
 @endsection
 
+
+@section('carosul')
+<div id="my-carosul">   {{--  Carosul --}}
+<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 " src="{{asset('img/scout.jpg')}}" alt="First slide">
+      <div class="carousel-caption  d-sm-block">
+        <h2>اهلا وسهلا بكم في متوسطة فتح الفتوح</h2>
+        <p>الموقع الالكتروني لمتوسطة فتح الفتوح في محافظة نينوى</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('img/waleed.jpg')}}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="{{asset('img/school-face.jpg')}}" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>اهلا وسهلا بكم في متوسطة فتح الفتوح</h5>
+        <p>الموقع الالكتروني لمتوسطة فتح الفتوح في محافظة نينوى</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"> السابق </span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">التالي</span>
+  </a>
+</div>
+
+</div>
+                                  {{--  End of Carosul --}}
+
+@endsection
+
+
+
+
+
 @section('content')
 <div id="section-two" class="">
-    <h1 id="last-news"class="myfont text-right py-3 bg-purple"> اخر النشاطات والفعاليات في الملتقى</h1>
+    <h1 id="last-news"class="myfont text-right py-3 bg-purple"> آخر الاخبار في المدرسة</h1>
     <hr>
   
         <div class="row">

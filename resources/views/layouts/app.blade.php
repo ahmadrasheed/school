@@ -36,9 +36,11 @@
    
     <div id="app" class="myfont" style="direction:rtl;">
         <nav style="direction:rtl !important;" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{{route('home')}}"><img src="{{ asset('img/multaka-logo.png') }}" width="100px"> </a>
+            <a class="navbar-brand" href="{{route('home')}}"><img src="{{ asset('img/school-logo.png') }}" width="100px"> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">   
+                <i class="fas fa-bars" style="color:#f87616; font-size:28px;"></i>
+            </span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,15 +49,15 @@
                   <a class="nav-link" href="{{route('home')}}">الصفحة الرئيسية<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">عن الملتقى</a>
+                  <a class="nav-link" href="#about">عن المدرسة</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     خيارات اخرى
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">الجلسات</a>
-                    <a class="dropdown-item" href="#">اخر المقالات</a>
+                    <a class="dropdown-item" href="#">مواعيد الامتحانات</a>
+                    <a class="dropdown-item" href="#">نتائج الطلبة</a>
                     <a class="dropdown-item" href="https://www.facebook.com/pg/BookForumMosul/posts/?ref=page_internal">صفحتنا على الفيس بوك</a>
                     <div class="dropdown-divider"></div>
                     @if (Auth::user())
@@ -80,7 +82,7 @@
           </nav> 
 
           
-          @yield('bg')
+         @yield('carosul')
           @yield('content')
           @yield('posts')
           @yield('create')
