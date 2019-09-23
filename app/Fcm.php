@@ -23,12 +23,12 @@ class Fcm extends Model
         }
         // dd($tokens);
         
-        $image="http://multaka.ahmadiraq.com/img/multaka-logo.png";
+        $image="http://school.ahmadiraq.com/img/school-logo.png";
         $data=array(
             'title' =>$post->title,
             'body'  =>$post->short,
             'post_id'   =>$post->id,
-            'image' => 'http://multaka.ahmadiraq.com/img/multaka-logo.png'
+            'image' => 'http://school.ahmadiraq.com/img/school-logo.png'
         );
 		$url = 'https://fcm.googleapis.com/fcm/send';
 		$fields = array(
@@ -36,8 +36,9 @@ class Fcm extends Model
 			 'data' => $data
 			);
 		$headers = array(
-			'Authorization:key = AAAAg8fuRYM:APA91bHae9WJA1u-Eid_6nwKphhUks2YADtaJ2cveAc928xK5uoWFb5P05M4iFO2JrmBcNCrjDr8jiJqbqsMfBpFiJf80sqPwKVK5ZBNM1mcugtqmFnMKZV0WV-ENdJjUVczm1_tGloR',
-			'Content-Type: application/json'
+			'Authorization:key = AAAAUv6CzGw:APA91bES0GqPSl8vuQU_K7sFlEiyneIhhj74IeMflyUP2wzrpMKHnqNYNsLDKNqRDVx35rUSwL8ZLe5F4s3LG6B0-nx4STQrUOqO3jBiTpq6eOCIGkD2WPsfQF2BBEbqtgCfh1ioc9qs',
+                                        
+            'Content-Type: application/json'
 			);
 	   $ch = curl_init();
        curl_setopt($ch, CURLOPT_URL, $url);
