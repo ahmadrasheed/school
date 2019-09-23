@@ -36,8 +36,7 @@ class Fcm extends Model
 			 'data' => $data
 			);
 		$headers = array(
-			'Authorization:key = AAAAUv6CzGw:APA91bES0GqPSl8vuQU_K7sFlEiyneIhhj74IeMflyUP2wzrpMKHnqNYNsLDKNqRDVx35rUSwL8ZLe5F4s3LG6B0-nx4STQrUOqO3jBiTpq6eOCIGkD2WPsfQF2BBEbqtgCfh1ioc9qs',
-                                        
+			'Authorization:key =AIzaSyCYJvpuONo_jF1BwcV1Qg4opCzPXdUN6rw',              
             'Content-Type: application/json'
 			);
 	   $ch = curl_init();
