@@ -25,7 +25,7 @@ class NotificationController extends Controller
            //'image' => 'required',
             'body' => 'required',
             ]); 
-
+$data->title="this is title by ahmad";
             FCM::sendToSchool($data);
             echo "done";
         
