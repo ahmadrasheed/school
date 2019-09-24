@@ -78,7 +78,7 @@ class Fcm extends Model
         $data=array(
             'title' =>$notificationData['title'],
             'body'  =>$notificationData['body'],
-            'post_id'   =>6,
+            //'post_id'   =>6,
             'image' => 'http://school.ahmadiraq.com/img/school-logo.png'
         );
 		$url = 'https://fcm.googleapis.com/fcm/send';
