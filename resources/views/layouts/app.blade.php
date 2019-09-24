@@ -83,7 +83,7 @@
           </nav> 
 
           
-         @yield('carosul')
+          @yield('carosul')
           @yield('content')
           @yield('posts')
           @yield('create')

@@ -37,8 +37,11 @@ class FcmController extends Controller
     {    // for saving Firebase Cloud Messaging tokens of registerd devices into database 
         if($fcm=Fcm::create($request->all()))
         {
+            //* don't forget to run (php artisan queue:work &) to run the jobs in background (&) ***** 
+
             //return new PostResource($post);
-            echo "don";
+            echo "done";
+            //dd("fcm controller");
         }
     }
 
