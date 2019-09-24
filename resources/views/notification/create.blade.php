@@ -48,10 +48,15 @@
         <div class="card-body">
         <form action="{{route('send.school')}}" method="POST">
             {!! csrf_field() !!}
+            <div class="form-group">
+                <label for="formGroupExampleInput">عنوان الاشعار</label>
+                <input type="text" class="form-control" name="title" id="title" placeholder="هنا يتم كتابة مضمون الاشعار  ......">
+              </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput">نص الاشعار</label>
                   <input type="text" class="form-control" name="body" id="body" placeholder="هنا يتم كتابة مضمون الاشعار  ......">
                 </div>
+                
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">ارسال</button>
                 </div>

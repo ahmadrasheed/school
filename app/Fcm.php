@@ -60,7 +60,7 @@ class Fcm extends Model
     }
     
 
-    static public function sendToSchool ($data)
+    static public function sendToSchool ($notificationData)
 	{   
         //************  don't forget to run (php artisan queue:work) to run the jobs *********** //
         $data=Fcm::all('token');
@@ -76,9 +76,9 @@ class Fcm extends Model
         
         $image="http://school.ahmadiraq.com/img/school-logo.png";
         $data=array(
-            'title' =>$data->title,
-            'body'  =>$data->short,
-            //'post_id'   =>$post->id,
+            'title' =>$notificationData['title'],
+            'body'  =>$notificationData['body'],
+            'post_id'   =>6,
             'image' => 'http://school.ahmadiraq.com/img/school-logo.png'
         );
 		$url = 'https://fcm.googleapis.com/fcm/send';

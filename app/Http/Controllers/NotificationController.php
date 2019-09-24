@@ -20,13 +20,14 @@ class NotificationController extends Controller
 
     public function sendToSchool(Request $request){
           $data = $request->validate([
-            //'title' => 'required',
+            'title' => 'required',
            // 'amount' => 'required|numeric',
            //'image' => 'required',
             'body' => 'required',
             ]); 
-$data->title="this is title by ahmad";
+            
             FCM::sendToSchool($data);
+            //dd($data);
             echo "done";
         
 
